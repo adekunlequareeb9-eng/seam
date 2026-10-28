@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #12110e;
+  --color-surface: #1c1a16;
+  --color-fg: #f4efe6;
+  --color-muted: #a39b8e;
+  --color-tally: #e25b2a;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.region-frame {
+  box-shadow: 0 0 0 100vmax color-mix(in oklab, var(--color-bg) 72%, transparent);
+  touch-action: none;
+}
+
+.tally-live {
+  animation: tally-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes tally-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tally-live,
+  .animate-spin {
+    animation: none;
+  }
+}

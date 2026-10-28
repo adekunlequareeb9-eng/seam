@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Seam",
+      "hasCanvas": false,
+      "bodyTextLen": 910,
+      "bodyTextHash": "dd0b122851e659a7759116d62705152ed0128c1085e244dfde2ea9f9eab179cc",
+      "bodyTextPrefix": "Seam Saved on this device Screen section reader Copy the text on",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Seam",
+      "hasCanvas": false,
+      "bodyTextLen": 1029,
+      "bodyTextHash": "b502a46ec3a8414562edee54021d409bad821f53b098c1160a529be74c25e861",
+      "bodyTextPrefix": "Seam Saved on this device Screen section reader Copy the text on",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

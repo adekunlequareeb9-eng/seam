@@ -1,0 +1,5 @@
+{
+  "title": "Seam",
+  "card": "custom",
+  "description": "Draw a rectangle on a shared screen. Seam reads the text there, then keeps stitching new lines as it scrolls."
+}
